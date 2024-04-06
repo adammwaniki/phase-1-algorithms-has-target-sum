@@ -12,6 +12,8 @@ function hasTargetSum(array, target) {
 
 /* 
   Write the Big O time complexity of your function here
+  0(n^2)
+  the worst case scenario, the algotithm would have to go through it n * n times since its comparing two values against each other as it iterates along the entire array
 */
 
 /* 
