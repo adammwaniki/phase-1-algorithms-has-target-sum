@@ -1,5 +1,13 @@
 function hasTargetSum(array, target) {
   // Write your algorithm here
+  for (let i = 0; i < array.length; i ++) {
+    for (let j = i + 1; j < array.length; j++) {
+      if ((array[i] + array[j]) === target) {
+        return true;
+      }
+    }
+  } 
+  return false //if no pair is found
 }
 
 /* 
@@ -8,6 +16,11 @@ function hasTargetSum(array, target) {
 
 /* 
   Add your pseudocode here
+  step1 the function takes in an array and a target integer as its arguments
+  step2 we define a for loop such that we can compare two values which will likeley lead to a quadratic time function
+  step3 declare the first variable as the first index of the array. for as long as the index is less than or equal to the length of the array it will continue to increment
+  step4 declare a second variable that is the first index + 1 of the array. the purpose of this variable is to add itself to the first variable and continue to increment as long as it is less than or equal to the length of the array
+  step5 we now return a boolean that says if the sum of the two variables is equal to the target integer, it returns true, else false
 */
 
 /*
